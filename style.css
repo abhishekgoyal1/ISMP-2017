@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+}
+.drop-list{
+    background-color: darkblue;
+}
+#drop{
+    background-color: darkblue;
+}
+
+.drop-list a{
+    color: lightgray;
+}
+#top_navbar{
+    background-color: darkgreen;
+    opacity: 0.7;
+}
+.carousel-caption img{
+    opacity: 0.7;
+}
+h3{
+    color: maroon;
+}
+#part-2{
+    background-color: white;
+}
+#jumbo{
+    padding: 1%;
+     background-color: darkblue;
+    opacity: 0.8;
+    color: white;
+}
+#about_us{
+    background-color: beige;
+}
+
+#contact_us{
+    background-color: gray;
+}
+#our_team{
+    background-color: aliceblue;
+}
