@@ -2,14 +2,23 @@ body{
     background-color: white;
 }
 .drop-list{
-    background-color: darkblue;
+    background-color: darkgreen;
+    opacity: 1;
+    padding: 2%;
+}
+.drop-list:hover{
+    background-color: grey;
+    opacity: 0.9;
+    padding: 2%;
 }
 #drop{
-    background-color: darkblue;
+    background-color: darkgreen;
+    opacity: 1;
 }
 
 .drop-list a{
-    color: lightgray;
+    color: white;
+    text-decoration: none;
 }
 #top_navbar{
     background-color: darkgreen;
@@ -24,9 +33,10 @@ h3{
 #part-2{
     background-color: white;
 }
+
 #jumbo{
     padding: 1%;
-     background-color: darkblue;
+     background-color: darkgreen;
     opacity: 0.8;
     color: white;
 }
@@ -39,4 +49,7 @@ h3{
 }
 #our_team{
     background-color: aliceblue;
+}
+.footer{
+    background-color: darkgreen;
 }
