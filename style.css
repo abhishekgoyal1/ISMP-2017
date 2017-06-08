@@ -22,7 +22,7 @@ body{
 }
 #top_navbar{
     background-color: darkgreen;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .carousel-caption img{
     opacity: 0.7;
@@ -37,23 +37,90 @@ h3{
 #jumbo{
     padding: 1%;
      background-color: darkgreen;
-    opacity: 0.8;
+    opacity: 0.9;
     color: white;
 }
 #about_us{
-    background-color: beige;
+    background-color:cornsilk;
 }
 
-#contact_us{
-    background-color: gray;
-}
-#our_team{
-    background-color: aliceblue;
-}
 .footer{
-    background-color: darkgreen;
+    background-color: black;
+    color: white;
 }
-#faq{
-    padding-left: 100px;
-    padding-right: 100px;
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
+.footer a:hover{
+    text-decoration:underline;
+    color: gold;
+}
+.footer h4{
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.1s;
+    opacity: 0.7;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    opacity: 1;
+}
+
+.card-home {
+    /* Add shadows to create the "card" effect */
+    padding: 2%;
+    background-color: gainsboro;
+    transition: 0.1s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-home:hover {
+    background-color: gold;
+}
+
+/* Add some padding inside the card container */
+.card-title{
+    color:black;
+       padding: 2%;
+    opacity:2;
+}
+
+
+
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+  transition: 1s;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }

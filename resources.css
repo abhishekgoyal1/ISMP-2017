@@ -16,6 +16,8 @@
 /* Add some padding inside the card container */
 .card-title{
     color:black;
+       padding: 2%;
+    opacity:2;
 }
 #resources-part-2{
     background-color:white;
@@ -50,10 +52,6 @@
 }
 .counselling{
     display: none;
-}
-.card-title{
-    padding: 2%;
-    opacity:2;
 }
 .description{
     background-color: dimgray;

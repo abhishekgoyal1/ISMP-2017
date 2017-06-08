@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-    <link rel = "stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
-  
+  <link rel = "stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
   <script src="jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="./carousel.js"></script>
+     
     <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -30,7 +31,6 @@
         <span class="icon-bar"></span>                        
       </button>
       <div>
-          <img class="navbar-brand" src="images/mentor.png">
             <a class="navbar-brand" href="#">IIT Ropar</a>
       </div>
     </div>
@@ -47,9 +47,9 @@
         </li>
         <li><a href="#about_us"><b>About Us</b></a></li>
         <li><a href="#"><b>Gallery</b></a></li>
-          <li><a href="#"><b>FAQ's</b></a></li>
+          <li><a href="./faq.html"><b>FAQ's</b></a></li>
           <li><a href="#contact_us"><b>Contact Us</b></a></li>
-          <li><a href="#our_team"><b>Our Team</b></a></li>
+          <li><a href="#our-team"><b>Our Team</b></a></li>
           <li><a href="./resources.html"><b>Resources</b></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -60,24 +60,24 @@
     </div>
 </nav>
 <br><br><br>
-    <div class="container-fluid">        
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+
+    
+<div id="Carousel" class="carousel slide carousel-fade container-fluid">
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="Carousel" data-slide-to="1"></li>
+            <li data-target="Carousel" data-slide-to="2"></li>
+            <li data-target="Carousel" data-slide-to="3"></li>
+
         </ol>
 
-        <!-- Wrapper for slides -->
         <div class="carousel-inner">
-          <div class="item">
-            <img src="images/MOA%20(2).jpg" alt="Los Angeles" style="width:100%;">
-          </div>
-
+         
           <div class="item active">
             <img src="images/view1.jpg" alt="Chicago" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="images/MOA%20(2).jpg" alt="Los Angeles" style="width:100%;">
           </div>
 
           <div class="item">
@@ -89,23 +89,23 @@
           </div>
         </div>
 
-        <!-- Left and right controls -->    
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
+        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
+        <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
 </div>
-
+        
+    
+    
+    
+    
 <section id="part-2">
    <div class="container-fluid">
          <div class="col-sm-11" id="jumbo">
                     <div class="text-center"><h2>Institute Student Mentorship Programme</h2></div>
-                    <div class="text-center"><h4>IIT Roapr</h4></div>
+                    <div class="text-center"><h4>Go Where You Feel Most Alive </h4></div>
     </div>
     
     <div class="col-sm-1">
@@ -116,8 +116,93 @@
         
     </div>
 </section>
-    <br><br>
-<div class="container" id="about_us">
+<section class="container-fluid">
+    <div class="col-sm-9">
+        <br><br><br>
+        <h2 class="text-center">MISSION</h2><br><br>
+        <p class="text-center">Institute Student Mentorship Program (ISMP) is a student initiative of IIT Ropar, which aims to provide a comprehensive and in-depth knowledge to freshmen on critical issues like academics, co and extra-curricular activities and how to bring about an optimum balance between them which proves decisive in shaping an individual's contentment levels in the institute.
+        </p><br>
+        <p class="text-center">
+        To ensure this, every fresher is allotted a mentor who obviously is a senior student with substantial experience in plethora of matters to guide the freshmen through the transition process. The mentors are selected through a rigorous process to make sure they can guide mentees to take informed decisions in all spheres. 
+        </p>
+    </div>
+    <div class=col-sm-3>       
+    <div class="card-home">
+      <img src="images/scholarship%20logo.png"  style="width:100%">
+      <div class="card-title">
+        <h4 class="text-center"><b>Merit Scholarship 2017</b></h4> 
+        <p class="text-center">IIT Ropar announces merit scholarship equivalent to the tuition fee paid by the student having JEE (Advanced)-2017 rank not exceeding 1500 (Open Category), who join the B.Tech. program at IIT Ropar.</p> 
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-8">
+        <h3><b>IIT Ropar made its place in Top 5 New IITs as per India Rankings 2017 in Engineering by the HRD Ministry. </b></h3>
+        <p>
+            <br><br>
+        IIT Ropar made its place in Top 5 New IITs as per India Rankings 2017 in Engineering by the HRD Ministry. 
+            <br><br>
+        According to the National Institutional Ranking Framework (NIRF) for 2017 by the Ministry of Human Resource Development, Indian Institute of Technology (IIT) Ropar has made its place in the top five new IITs as per the rankings. The institute has also made a significant improvement in the parameter of Outreach and Inclusivity (OI).
+            <br><br>
+        Professor S K Das, Director, IIT Ropar expressed his happiness to be a part of the India Rankings 2017 and this year the institute bagged <b>3rd spot among the new IITs in ‘overall’ category and 5th spot in the engineering category</b> (among new IITs).
+            <br><br>
+        He also said that the improved score in Outreach and Inclusivity parameter showed that the institute promoted regional diversity, international outreach, as well as gender inclusivity. The institute also promoted inclusion of students from economically and socially challenged sections and physically challenged students. 
+            <br><br>
+        IIT Ropar has improved in comparison to last year and has scored the best in the parameter of OI. The institute had scored in the parameter 105th rank last year and moved to 11th this year.
+            <br><br>
+        </p>
+        <div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <a href="https://www.nirfindia.org/EngineeringRanking.html">MHRD Engineering colleges ranking</a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <a href="https://nirfcdn.azureedge.net/rankingpdf2017/IR17-ENGG-2-1-340.pdf">Detailed ranking of IIT ROPAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <br><br><br><br><h4 class="text-center"><b>Performence : IIT Ropar</b></h4><br>
+    <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td><b>Marks(Out of 100)</b></td>
+                  </tr>
+                
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Teaching Leearning and Resources</b></td>
+                    <td>78.92</td>
+                  </tr>
+                  <tr>
+                    <td><b>Research, Professional Practice and Collaborative Performence</b></td>
+                    <td>27.63</td>
+                  </tr>
+                  <tr>
+                    <td><b>Graduation Outcomes</b></td>
+                    <td>62.97</td>
+                  </tr>
+                  <tr>
+                    <td><b>Outreach and Inclusivity</b></td>
+                    <td>76.06</td>
+                  </tr>
+                  <tr>
+                    <td><b>Perception</b></td>
+                    <td>7.68</td>
+                  </tr>
+                  <tr>
+                    <td><b>Overall</b></td>
+                    <td>52.93</td>
+                  </tr>
+                </tbody>
+              </table>
+    </div>
+</section>   
+<div class="container-fluid" id="about_us">
     <br><br>
     <h2>About Us</h2>
     <div id = 'tabs'>
@@ -271,23 +356,74 @@ Other than all this, every year, there are competitions among hostel like on dif
                 The institute, apart from establishing a robust teaching environment, is keen to facilitate and support cutting-edge research in variety of areas. This aspect, we believe, will enable the students to acquaint themselves with latest developments in their respective areas of study and peruse their own research interests. This would also result in a constant revision of courses that are being taught. The institute encourages its faculty members to initiate research work and provides an initiation grant and also the basic facilities for its sustenance. It also encourages faculty members to establish collaborative research ventures with other research labs and industry. In this regard, the institute is keen to establish the Central Research Facility. The institute has already started its PhD Programme, so that the research environment is further augmented, expanded, and made even more vibrant.
             </div>
     </div>
-</div>
-    <br>
-    <br>
-    <br>
-
-<div class="container" id="contact_us">
-    <br><br>
-    <h2>Contact Us</h2>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-<div class="container" id="our_team">
-    <br><br>
-    <h2>Our Team</h2>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
     <br><br><br>
-
+</div>
+    <br><br><br><br><br>
+<section class="footer">
+    <div class="container">
+    <div class="col-sm-9">
+        <br>
+        <h4>QUICK LINKS</h4><br>
+        <div class="text-left">
+        <div class="col-sm-4">
+            <a href="http://alumni.iitrpr.ac.in">IITRPR Alumni</a><br><br>
+            <a href="http://www.iitrpr.ac.in/rutag">RuTAG</a><br><br>
+            <a href="http://www.iitrpr.ac.in/sponsored-research-consultancy">Sponsored Research &amp; Consultancy</a><br><br>
+            <a href="http://www.iitrpr.ac.in/crf1">Central Research Facilities</a><br><br>
+            <a href="http://www.iitrpr.ac.in/bost">Board of Science and Technology (BOST)</a><br>
+            <a href="https://sites.google.com/site/centralworkshopiitropar/">Central Workshop</a><br><br>
+            <a href="http://www.iitrpr.ac.in/cibi">CIBI</a><br><br>
+            <a href="https://sites.google.com/a/iitrpr.ac.in/physics/">PunjRobotics Careers [AT] IIT Ropar</a><br><br>
+            <a href="http://www.iitrpr.ac.in/sites/default/files/Promotion%20Policy.pdf">Recruitment and Promotion Policy </a><br><br>
+            <a href="http://www.iitrpr.ac.in/Permanent%20Campus/">Permanent Campus</a><br><br>
+        </div>
+        <div class="col-sm-4">
+            <a href="http://www.iitrpr.ac.in/sac">Student Activity Center</a><br><br>
+            <a href="https://sites.google.com/site/ropariprcell/">IPR Cell </a><br><br>
+            <a href="http://www.gian.iitkgp.ac.in">GIAN</a><br><br>
+            <a href="http://www.iitrpr.ac.in/enactus">ENACTUS</a><br><br>
+            <a href="http://www.iitrpr.ac.in/sme">SME@IITRPR</a><br><br>
+            <a href="http://www.iitrpr.ac.in/ebriiit-ropar-india-research-project">EBRI</a><br><br>
+            <a href="http://www.iitrpr.ac.in/tenders">Tenders</a><br><br>
+            <a href="http://www.iitrpr.ac.in/sites/default/files/Stores%20and%20Purchase%20Manual.pdf">Stores &amp; Purchase Manual 2015 </a><br><br>
+            <a href="http://www.iitrpr.ac.in/right-information-act">RTI Cell </a><br><br>
+            <a href="http://www.iitrpr.ac.in/uay">Uchhatar Avishkar Yojana (UAY) </a><br><br>
+        </div>
+        <div class="col-sm-4">
+            <a href="http://www.iitrpr.ac.in/peer-review">External Peer Review Report</a><br><br>
+            <a href="http://www.iitrpr.ac.in/Counselling-Cell/">Counselling Cell</a><br><br>
+            <a href="http://www.iitrpr.ac.in/womensforum/">Women's Forum</a><br><br>
+            <a href="http://www.iitrpr.ac.in/sexual-harassment-complaints-committee">Sexual Harrassment Complaints </a><br><br>
+            <a href="http://www.iitrpr.ac.in/हिन्दी-सैल">हिन्दी सैल</a><br><br>
+            <a href="http://www.iitrpr.ac.in/kshitij">क्षितिज-The Horizon</a><br><br>
+            <a href="http://www.iitrpr.ac.in/annual-property-return-ay-2012-13">Annual Property Returns</a><br><br>
+            <a href="http://www.iitrpr.ac.in/notices">Notices</a><br><br>
+            <a href="http://www.iitrpr.ac.in/sites/default/files/notification.pdf">Notifications </a><br><br>
+            <a href="http://www.iitrpr.ac.in/prajwalam-biannual-newsletter-iit-ropar">NewsLetter</a><br><br>
+        </div>
+        </div>
+    </div>
     
+    <div class="col-sm-3">
+        <br>
+        <h4>CONTACT DETAILS</h4>
+        <br><hr><br>
+        <p>Indian Institute of Technology Ropar, Nangal Road, Rupnagar, Punjab, INDIA 140001 </p>
+        <br>
+        <p> &nbsp; +91-1881-227078 <br>&nbsp; +91-1881-223395 </p>
+        <br><hr><br>
+        <h4>Follow us - 
+            <a href="https://www.facebook.com/iitrpr"><img src="images/fb%20icon.png" width="20%"></a>
+            <a href="https://twitter.com/iitrpr"><img src="images/twitter%20icon.png" width="20%"></a> 
+        </h4>
+    </div>
+    </div>
+    <hr>
+    <div class="container">
+    <p class="col-sm-3">Copyright &copy; 2017, IIT Ropar </p><p class="col-sm-6"></p> <p class="col-sm-3"> Designed by   <a href="#our-team">ISMP Web-Development Team</a></p>    
+    </div>
+    
+</section>
+
 </body>
 </html>
