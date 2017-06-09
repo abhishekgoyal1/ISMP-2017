@@ -1,3 +1,6 @@
+body{
+    background-color: white;
+}
 .card {
     /* Add shadows to create the "card" effect */
     padding: 2%;
@@ -52,6 +55,12 @@
 }
 .counselling{
     display: none;
+}
+.mentor{
+    display: none;
+}
+.counselling a{
+    color: black;
 }
 .description{
     background-color: dimgray;

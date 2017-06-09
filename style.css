@@ -124,3 +124,9 @@ h3{
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+.gray {
+    color: black;
+    background-color: white;
+    opacity:0.5;
+    vertical-align: middle;
+}
