@@ -11,6 +11,32 @@
   <script src="jquery-3.2.1.min.js"></script>
   <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
   <script src="js/bootstrap.min.js"></script>
+   <script>
+        $(document).ready(function(){
+      // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+</script>
 </head>
 
 <body>
@@ -29,20 +55,13 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="./try1.html"><b>Home</b></a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Page 1</b> <span class="caret"></span></a>
-            <ul class="dropdown-menu" id="drop">
-              <div class="drop-list"><li><a href="#"><div class="text-center">Page 1-1</div></a></li></div>
-              <div class="drop-list"><li><a href="#"><div class="text-center">Page 1-1</div></a></li></div>
-              <div class="drop-list"><li><a href="#"><div class="text-center">Page 1-1</div></a></li></div>
-            </ul>
-          </li>
-          <li><a href="#about_us"><b>About Us</b></a></li>
-          <li><a href="#"><b>Gallery</b></a></li>
+
+          <li><a href="./gallery.html"><b>Gallery</b></a></li>
           <li><a href="./faq.html"><b>FAQ's</b></a></li>
-          <li><a href="#contact_us"><b>Contact Us</b></a></li>
-          <li class="active"><a href="#"><b>Our Team</b></a></li>
+          
+          <li class="active"><a href="./our_team.html"><b>Our Team</b></a></li>
           <li><a href="./resources.html"><b>Resources</b></a></li>
+          <li><a href="#contact"><b>Contact Us</b></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="./form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -62,6 +81,9 @@
       <li data-target="Carousel" data-slide-to="3"></li>
 
     </ol>
+      <div class="carousel-caption gray" >
+          <h2><b>OUR TEAM</b></h2>
+      </div>
 
     <div class="carousel-inner">
 
@@ -109,26 +131,23 @@
   </div>
 </section>
 <br><br><br><br>
-<section class="container-fluid">
-  <div class="col-sm-9">
+<section class="container text-center">
+    <div class="col-sm-2"></div>
+  <div class="col-sm-8">
     <br><br>
     <h1 class="text-center">Our Team </h1><br><br>
-    <p class="text-left" style="font-size:120%;">
+    <div class="text-left" style="font-size:120%;">
 
       <h3>Faculty Members</h3>
-
+<p>
       <b>Dr. Ravi Mohan Prasad</b>, Assistant Professor in the School of Mechanical, Materials & Energy Engineering (SMMEE),IIT Ropar is the faculty incharge of this programme and has taken special interest to help and encourage the students to form this Mentorship Programme. He has made a special effort in order to prepare the events for counselling of the 2016 Batch. With his mentorship we ensure that we will counsel the freshers to the best extent possible.<br><br><br>
 
     </p>
+    </div>
 
 
-    <pre style="font-size:110%;">
-      <h3>[Team members]
-   [Name]           [Email Address]
-      </h3>
-      <h3>Mentors from 4th Year</h3>
-      Pradeep Kalra           2014meb1106@iitrpr.ac.in
-
+    <pre style="font-size:110%;" class="text-center">
+      <h2>Team members          Email Address</h2>
       <h3>Mentors from 3rd Year</h3>
       Deva Dath Jagarlamudi   2015meb1089@iitrpr.ac.in
       Nittin Singh            2015csb1067@iitrpr.ac.in
@@ -136,6 +155,7 @@
       Tanay Narshana          2015eeb1076@iitrpr.ac.in
       Anuj Kalsotra           2015meb1085@iitrpr.ac.in
       Harsh singhal           2015meb1094@iitrpr.ac.in
+      Rohan Agarwal           2015eeb1072@iitrpr.ac.in
       Naman gola              2015eeb1064@iitrpr.ac.in
       Ambuj Gahoi             2015meb1084@iitrpr.ac.in
       Rushit Virani           2015meb1111@iitrpr.ac.in
@@ -184,7 +204,6 @@
       Kinshuk Attri           2016meb1123@iitrpr.ac.in
       Tushar Saini            2016ceb1023@iitrpr.ac.in
       Abhinav Jindal          2016csb1026@iitrpr.ac.in
-      Rohan Agarwal           2015eeb1072@iitrpr.ac.in
       Manya Dave              2016eeb1084@iitrpr.ac.in
       Abhishek Dawas          2016meb1107@iitrpr.ac.in
       Shivang singh           2016ceb1021@iitrpr.ac.in
@@ -249,6 +268,7 @@
     </pre>
 
   </div>
+    <div class="col-sm-2"></div>
 </section> 
 <br><br><br><br><br>
 <section class="footer">
@@ -296,7 +316,7 @@
       </div>
     </div>
     
-    <div class="col-sm-3">
+    <div class="col-sm-3" id="contact">
       <br>
       <h4>CONTACT DETAILS</h4>
       <br><hr><br>
@@ -318,4 +338,3 @@
 </section>
 
 </body>
-</html>
