@@ -36,7 +36,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 500, function(){
+      }, 800, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -46,7 +46,15 @@ $(document).ready(function(){
 });
     </script>
 <!--   SCRIPT FOR GENTLE SCROLLING -->
-                   
+    <style>
+body, html, .main {
+    height: 1%;
+}
+
+section {
+    min-height: 1%;
+}
+</style>                
 </head>
 
 <body>
