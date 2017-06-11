@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ISMP IIT Ropar | Gallery</title>
+  <title>ISMP IIT Ropar | Registration</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-    
-  <link rel="stylesheet" href="gallery.css">
-
   <link rel = "stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
   <script src="jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="./gallery.js"></script>
+  <script src="./carousel.js"></script>
      
     <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#tabs').tabs();
             $('#acc').accordion();
-        });
+        });   
     </script>
+    <script>
+        
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+    </script>
+<!--   SCRIPT FOR GENTLE SCROLLING -->
+                   
 </head>
 
 <body>
@@ -34,16 +60,16 @@
         <span class="icon-bar"></span>                        
       </button>
       <div>
-            <a class="navbar-brand" href="javascript:void(0)">IIT Ropar</a>
+            <a class="navbar-brand" href="./index.html">IIT Ropar</a>
       </div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <!--<li class="active"><a href="#"><b>Home</b></a></li>-->
         <li ><a href="./index.html"><b>Home</b></a></li>
-          <li><a href="./form.html"><b>Registration</b></a></li>
+          <li class="active"><a href="./form.html"><b>Registration</b></a></li>
           <li calss="new"><a href="./about.html"><b>About Us</b></a></li>
-        <li class="active"><a href="./gallery.html"><b>Gallery</b></a></li>
+        <li><a href="./gallery.html"><b>Gallery</b></a></li>
           <li><a href="./faq.html"><b>FAQ's</b></a></li>
           <li><a href="./blogs.html"><b>Blog</b></a></li>
           <li><a href="./our_team.html"><b>Our Team</b></a></li>
@@ -57,101 +83,11 @@
     </div>
     </div>
 </nav>
-      
-  
-    
-    
-<section class="container-fluid" style="margin-top: 51px;">
-    <br><br>
-        <div class="col-sm-3 photos">
-            <a href="#photos-center"><img src="THUMBNAILS/1.png" id="1"></a>
-            <a href="#photos-center"><img src="THUMBNAILS/19.png" id="19"></a>
-            <a href="#photos-center"><img src="THUMBNAILS/20.png" id="20"></a>
-            <a href="#photos-center"><img src="THUMBNAILS/16.png" id="16"></a>
-        </div>
-        
-        <div class="col-sm-6" id="photos-center">
-            <br><br><br><br><br>
-            <!-- PHOTOS HERE -->
-            <img src="reized/1.png" id="one">
-            <img src="reized/2.png" id="two">
-            <img src="reized/4.png" id="four">
-            <img src="reized/3.png" id="three">
-            <img src="reized/6.png" id="six">
-            <img src="reized/7.png" id="seven">
-            <img src="reized/8.png" id="eight">
-            <img src="reized/9.png" id="nine">
-            <img src="reized/10.png" id="ten">
-            <img src="reized/11.png" id="eleven">
-            <img src="reized/12.png" id="twelve">
-            <img src="reized/13.png" id="thirteen">
-            <img src="reized/14.png" id="fourteen">
-            <img src="reized/15.png" id="fifteen">
-            <img src="reized/16.png" id="sixteen">
-            <img src="reized/17.png" id="seventeen">
-            <img src="reized/18.png" id="eighteen">
-            <img src="reized/19.png" id="nineteen">
-            <img src="reized/20.png" id="twenty">
-            <br><br><br>
-        </div>
-    
-        <div class="col-sm-3 photos">
-            
-            <a href="#photos-center"><img src="THUMBNAILS/11.png" id="11"></a>
-            <a href="#photos-center"><img src="THUMBNAILS/12.png" id="12"></a>
-            <a href="#photos-center"><img src="THUMBNAILS/13.png" id="13"></a>
-            <a href="#photos-center"><img src="THUMBNAILS/14.png" id="14"></a>
 
-        </div>
-    <div class="col-sm-2 photos">
-        <a href="#photos-center"><img src="THUMBNAILS/2.png" id="2"></a>
-        <a href="#photos-center"><img src="THUMBNAILS/3.png" id="3"></a>
-    </div>
-    <div class="col-sm-2 photos">
-        <a href="#photos-center"><img src="THUMBNAILS/4.png" id="4"></a>
-        <a href="#photos-center"><img src="THUMBNAILS/6.png" id="6"></a>
-    </div>
-    <div class="col-sm-2 photos">
-        <a href="#photos-center"><img src="THUMBNAILS/7.png" id="7"></a>
-        <a href="#photos-center"><img src="THUMBNAILS/8.png" id="8"></a>
-    </div>
-    <div class="col-sm-2 photos">
-        <a href="#photos-center"><img src="THUMBNAILS/9.png" id="9"></a>
-        <a href="#photos-center"><img src="THUMBNAILS/10.png" id="10"></a>
-    </div>
-    <div class="col-sm-2 photos">
-        <a href="#photos-center"><img src="THUMBNAILS/15.png" id="15"></a>
-        <a href="#photos-center"><img src="THUMBNAILS/17.png" id="17"></a>
-    </div>
-    <div class="col-sm-2 photos">
-        <a href="#photos-center"><img src="THUMBNAILS/18.png" id="18"></a>
-    </div>
-    
-<!--
-    <div class="container">
-        <img src="BOCA/1.png">
-        <img src="BOCA/2.png">
-        <img src="BOCA/3.png">
-        <img src="BOCA/4.png">
-        <img src="BOCA/6.png">
-        <img src="BOCA/7.png">
-        <img src="BOCA/8.jpg">
-        <img src="BOCA/9.jpg">
-        <img src="BOCA/10.jpg">
-        <img src="BOCA/11.jpg">
-        <img src="BOCA/12.jpg">
-        <img src="BOCA/13.jpg">
-        <img src="BOCA/14.jpg">
-        <img src="BOCA/15.jpg">
-        <img src="BOCA/16.jpg">
-        <img src="BOCA/17.jpg">
-        <img src="BOCA/18.jpg">
-        <img src="BOCA/19.jpg">
-        <img src="BOCA/20.jpg">
-    </div>
--->
-</section>    
-    <br><br><br><hr><br><br>
+<div align="center" style="background-color: #ede7f6;">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5nV0_rE8XkH5-Pn9TiW3g84b5O2sHoVCqQ4ADuWgGnsmI-w/viewform?embedded=true" width="100%" height="2370" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+
 <section class="footer">
     <div class="container">
     <div class="col-sm-9">

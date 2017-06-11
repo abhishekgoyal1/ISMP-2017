@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ISMP</title>
+  <title>ISMP IIT Ropar | Team</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,143 +11,64 @@
   <script src="jquery-3.2.1.min.js"></script>
   <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
   <script src="js/bootstrap.min.js"></script>
-   <script>
-        $(document).ready(function(){
-      // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-
-              // Store hash
-              var hash = this.hash;
-
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        });
-</script>
 </head>
 
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" id="top_navbar">
     <div class="container-fluid">  
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <div>
-          <a class="navbar-brand" href="#">IIT Ropar</a>
-        </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div>
+            <a class="navbar-brand" href="./index.html">IIT Ropar</a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="./try1.html"><b>Home</b></a></li>
-
-          <li><a href="./gallery.html"><b>Gallery</b></a></li>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!--<li class="active"><a href="#"><b>Home</b></a></li>-->
+        <li ><a href="./index.html"><b>Home</b></a></li>
+          <li><a href="./form.html"><b>Registration</b></a></li>
+          <li calss="new"><a href="./about.html"><b>About Us</b></a></li>
+        <li><a href="./gallery.html"><b>Gallery</b></a></li>
           <li><a href="./faq.html"><b>FAQ's</b></a></li>
-          
+          <li ><a href="./blogs.html"><b>Blog</b></a></li>
           <li class="active"><a href="./our_team.html"><b>Our Team</b></a></li>
           <li><a href="./resources.html"><b>Resources</b></a></li>
-          <li><a href="#contact"><b>Contact Us</b></a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="./form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-        </ul>
-      </div>
+          <li calss="new"><a href="#contact" id="con"><b>Contact Us</b></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul>
     </div>
-  </nav>
-  <br><br><br>
-
-
-  <div id="Carousel" class="carousel slide carousel-fade container-fluid">
-    <ol class="carousel-indicators">
-      <li data-target="Carousel" data-slide-to="0" class="active"></li>
-      <li data-target="Carousel" data-slide-to="1"></li>
-      <li data-target="Carousel" data-slide-to="2"></li>
-      <li data-target="Carousel" data-slide-to="3"></li>
-
-    </ol>
-      <div class="carousel-caption gray" >
-          <h2><b>OUR TEAM</b></h2>
-      </div>
-
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="images/view1.jpg" alt="Chicago" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="images/MOA%20(2).jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="images/view%202.jpg" alt="New york" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="images/Hostel-Pics.jpg" alt="New york" style="width:100%;">
-      </div>
     </div>
-
-    <a class="left carousel-control" href="#Carousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#Carousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </div>
+</nav>
 
 
-
-
-
-  <section id="part-2">
-   <div class="container-fluid">
-     <div class="col-sm-11" id="jumbo">
-      <div class="text-center"><h2>Institute Student Mentorship Programme</h2></div>
-      <div class="text-center"><h4>Go Where You Feel Most Alive </h4></div>
-    </div>
-    
-    <div class="col-sm-1">
-      <img src="images/untitled.png" width="88px" height="100px">
-    </div>
-    <!--<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-    responsive, mobile-first projects on the web.</p> -->
-
-  </div>
-</section>
-<br><br><br><br>
-<section class="container text-center">
-    <div class="col-sm-2"></div>
-  <div class="col-sm-8">
+  
+<section class="container-fluid" style="margin-top: 51px;">
+  <div class="col-sm-12">
     <br><br>
     <h1 class="text-center">Our Team </h1><br><br>
-    <div class="text-left" style="font-size:120%;">
+    <p class="text-left" style="font-size:120%;">
 
       <h3>Faculty Members</h3>
-<p>
+
       <b>Dr. Ravi Mohan Prasad</b>, Assistant Professor in the School of Mechanical, Materials & Energy Engineering (SMMEE),IIT Ropar is the faculty incharge of this programme and has taken special interest to help and encourage the students to form this Mentorship Programme. He has made a special effort in order to prepare the events for counselling of the 2016 Batch. With his mentorship we ensure that we will counsel the freshers to the best extent possible.<br><br><br>
 
     </p>
-    </div>
 
 
-    <pre style="font-size:110%;" class="text-center">
-      <h2>Team members          Email Address</h2>
+    <pre style="font-size:110%;">
+      <h3>[Team members]
+   [Name]           [Email Address]
+      </h3>
+      <h3>Mentors from 4th Year</h3>
+      Pradeep Kalra           2014meb1106@iitrpr.ac.in
+
       <h3>Mentors from 3rd Year</h3>
       Deva Dath Jagarlamudi   2015meb1089@iitrpr.ac.in
       Nittin Singh            2015csb1067@iitrpr.ac.in
@@ -155,7 +76,6 @@
       Tanay Narshana          2015eeb1076@iitrpr.ac.in
       Anuj Kalsotra           2015meb1085@iitrpr.ac.in
       Harsh singhal           2015meb1094@iitrpr.ac.in
-      Rohan Agarwal           2015eeb1072@iitrpr.ac.in
       Naman gola              2015eeb1064@iitrpr.ac.in
       Ambuj Gahoi             2015meb1084@iitrpr.ac.in
       Rushit Virani           2015meb1111@iitrpr.ac.in
@@ -204,6 +124,7 @@
       Kinshuk Attri           2016meb1123@iitrpr.ac.in
       Tushar Saini            2016ceb1023@iitrpr.ac.in
       Abhinav Jindal          2016csb1026@iitrpr.ac.in
+      Rohan Agarwal           2015eeb1072@iitrpr.ac.in
       Manya Dave              2016eeb1084@iitrpr.ac.in
       Abhishek Dawas          2016meb1107@iitrpr.ac.in
       Shivang singh           2016ceb1021@iitrpr.ac.in
@@ -213,7 +134,7 @@
       Chetan Prakash Saini    2016meb1116@iitrpr.ac.in
 
       <h3>Website Development</h3>
-      Pratik Chajjer
+      Pratik Chhajer
       Sudhanshu
       Ashish
       Sarthak
@@ -268,7 +189,6 @@
     </pre>
 
   </div>
-    <div class="col-sm-2"></div>
 </section> 
 <br><br><br><br><br>
 <section class="footer">
@@ -316,7 +236,7 @@
       </div>
     </div>
     
-    <div class="col-sm-3" id="contact">
+    <div class="col-sm-3">
       <br>
       <h4>CONTACT DETAILS</h4>
       <br><hr><br>
@@ -338,3 +258,4 @@
 </section>
 
 </body>
+</html>
