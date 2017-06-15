@@ -85,7 +85,7 @@ h3{
 
 /* On mouse-over, add a deeper shadow */
 .card-home:hover {
-    background-color: gold;
+    background-color: darkgray;
 }
 
 /* Add some padding inside the card container */
@@ -132,4 +132,12 @@ h3{
 }
 .headings{
     text-align: center;
+}
+
+.jumbotron{
+    background-color: darkslateblue;
+    color: gainsboro;
+}
+.jumbotron h2{
+    color: navajowhite;
 }
